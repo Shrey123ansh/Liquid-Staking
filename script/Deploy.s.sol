@@ -5,6 +5,7 @@ import "./DeployHelpers.s.sol";
 import {DeployYourContract} from "./DeployYourContract.s.sol";
 import "../contracts/BLSToken.sol"; // Adjust path based on your file structure
 import "../contracts/BlumeLiquidStaking.sol"; // Adjust path based on your file structure;
+import "../contracts/SmartWallet.sol"; // Adjust path based on your file structure;
 
 
 contract DeployScript is ScaffoldETHDeploy {
@@ -30,11 +31,14 @@ contract DeployScript is ScaffoldETHDeploy {
         // Deploy BlumeLiquidStaking
         BlumeLiquidStaking stakingToken = new BlumeLiquidStaking(blsToken);
 
+        SmartWallet smartWallet = new SmartWallet();
+
         // Stop broadcasting
         vm.stopBroadcast();
 
         // Print the addresses of the deployed contracts
         console.log("BLSToken deployed to:", address(blsToken));
         console.log("BlumeLiquidStaking deployed to:", address(stakingToken));;
+        console.log("SmartWallet deployed to:", address(smartWallet));;
     }
 }
