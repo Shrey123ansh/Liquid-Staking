@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-import "openzeppelin/access/Ownable.sol";
-import "openzeppelin/token/ERC20/ERC20.sol";
-import "openzeppelin/token/ERC20/extensions/IERC20Permit.sol";
-import "openzeppelin/utils/cryptography/draft-EIP712.sol";
-import "openzeppelin/utils/cryptography/ECDSA.sol";
-import "openzeppelin/utils/Counters.sol";
-import "openzeppelin/token/ERC20/utils/SafeERC20.sol";
+import "@openzeppelin-contracts/contracts/access/Ownable.sol";
+import "@openzeppelin-contracts/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Permit.sol";
+import "@openzeppelin-contracts/contracts/utils/cryptography/draft-EIP712.sol";
+import "@openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol";
+import "@openzeppelin-contracts/contracts/utils/Counters.sol";
+import "@openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol";
 
 // This version of ERC20Permit is from OpenZeppelin as of commit
 // https://github.com/OpenZeppelin/openzeppelin-contracts/commit/5171e46c47bd6be781aa92315944ca37126d4a73
